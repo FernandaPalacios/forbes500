@@ -1,0 +1,1 @@
+var globalTI = globalTI || {};globalTI.session="6137b009-113c-4444-b8ec-d759bf64a835";document.cookie = "globalTI_SID=6137b009-113c-4444-b8ec-d759bf64a835; expires=Sat, 16 Jul 2022 17:59:47 GMT; path=/";if(document.dispatchEvent){document.dispatchEvent(new CustomEvent("TISessionEvent",{detail:{sessionID:"6137b009-113c-4444-b8ec-d759bf64a835"},bubbles:true,cancelable:true}));}

@@ -1,0 +1,4 @@
+if ( BKTAG != 'undefined' && BKTAG.htmlToDom ) {
+  BKTAG.htmlToDom('<script type="text/javascript">function bk_clear(id){try{document.getElementById(id).innerHTML=\'\'}catch(e){}} setTimeout("bk_clear(\'bk_js_6442\')",1000);</script><div id="bk_js_6442"> <script type="text/javascript"> window._bkguid="uQUN47ux99O4z%2BCR"; </script>  </div> ', document);
+}
+

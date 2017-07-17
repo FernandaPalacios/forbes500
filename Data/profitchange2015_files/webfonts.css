@@ -1,0 +1,98 @@
+@font-face{
+  font-family: "Helvetica Neue Bold";
+    src: url('http://fonts.timeinc.net/ti/fortune/Helvetica_Neue_LT_STD_Bold.eot');
+    src: url('http://fonts.timeinc.net/ti/fortune/Helvetica_Neue_LT_STD_Bold.eot?#iefix') format('embedded-opentype'),
+      url('http://fonts.timeinc.net/ti/fortune/Helvetica_Neue_LT_STD_Bold.woff') format('woff'),
+      url('http://fonts.timeinc.net/ti/fortune/Helvetica_Neue_LT_STD_Bold.ttf') format('truetype'),
+      url('http://fonts.timeinc.net/ti/fortune/Helvetica_Neue_LT_STD_Bold.svg#helvetica_neue_lt_std75_bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face{
+  font-family: "Helvetica Neue Bold Condensed";
+    src: url('http://fonts.timeinc.net/ti/fortune/Helvetica_Neue_LT_STD_Bold_Condensed.eot');
+    src: url('http://fonts.timeinc.net/ti/fortune/Helvetica_Neue_LT_STD_Bold_Condensed.eot?#iefix') format('embedded-opentype'),
+      url('http://fonts.timeinc.net/ti/fortune/Helvetica_Neue_LT_STD_Bold_Condensed.woff') format('woff'),
+      url('http://fonts.timeinc.net/ti/fortune/Helvetica_Neue_LT_STD_Bold_Condensed.ttf') format('truetype'),
+      url('http://fonts.timeinc.net/ti/fortune/Helvetica_Neue_LT_STD_Bold_Condensed.svg#helvetica_neue_lt_std77BdCn') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Helvetica Neue Medium";
+    src: url('http://fonts.timeinc.net/ti/fortune/Helvetica_Neue_LT_STD_Medium.eot');
+    src: url('http://fonts.timeinc.net/ti/fortune/Helvetica_Neue_LT_STD_Medium.eot?#iefix') format('embedded-opentype'),
+      url('http://fonts.timeinc.net/ti/fortune/Helvetica_Neue_LT_STD_Medium.woff') format('woff'),
+      url('http://fonts.timeinc.net/ti/fortune/Helvetica_Neue_LT_STD_Medium.ttf') format('truetype'),
+      url('http://fonts.timeinc.net/ti/fortune/Helvetica_Neue_LT_STD_Medium.svg#helvetica_neue_lt_std65Md') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face{
+  font-family: "Helvetica Neue Medium Condensed";
+    src: url('http://fonts.timeinc.net/ti/fortune/HelveticaNeueW01-67MdCn692710.eot');
+    src: url('http://fonts.timeinc.net/ti/fortune/HelveticaNeueW01-67MdCn692710.eot?#iefix') format('embedded-opentype'),
+      url('http://fonts.timeinc.net/ti/fortune/HelveticaNeueW01-67MdCn692710.woff') format('woff'),
+      url('http://fonts.timeinc.net/ti/fortune/HelveticaNeueW01-67MdCn692710.ttf') format('truetype'),
+      url('http://fonts.timeinc.net/ti/fortune/HelveticaNeueW01-67MdCn692710.svg#helvetica_neue_lt_std67MdCn') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face{
+  font-family: "Helvetica Neue Medium Italic";
+    src: url('http://fonts.timeinc.net/ti/fortune/HelveticaNeueW01-65Medi.eot');
+    src: url('http://fonts.timeinc.net/ti/fortune/HelveticaNeueW01-65Medi.eot?#iefix') format('embedded-opentype'),
+      url('http://fonts.timeinc.net/ti/fortune/HelveticaNeueW01-65Medi.woff') format('woff'),
+      url('http://fonts.timeinc.net/ti/fortune/HelveticaNeueW01-65Medi.ttf') format('truetype'),
+      url('http://fonts.timeinc.net/ti/fortune/HelveticaNeueW01-65Medi.svg#helvetica_neue_lt_std66MdIt') format('svg');
+  font-style: italic;
+  font-weight: normal;
+}
+
+@font-face{
+  font-family: "Helvetica Neue Roman";
+    src: url('http://fonts.timeinc.net/ti/fortune/Helvetica_Neue_LT_STD_Roman.eot');
+    src: url('http://fonts.timeinc.net/ti/fortune/Helvetica_Neue_LT_STD_Roman.eot?#iefix') format('embedded-opentype'),
+      url('http://fonts.timeinc.net/ti/fortune/Helvetica_Neue_LT_STD_Roman.woff') format('woff'),
+      url('http://fonts.timeinc.net/ti/fortune/Helvetica_Neue_LT_STD_Roman.ttf') format('truetype'),
+      url('http://fonts.timeinc.net/ti/fortune/Helvetica_Neue_LT_STD_Roman.svg#helvetica_neue_lt_std55_roman') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Miller Display Bold";
+    src: url('http://fonts.timeinc.net/ti/fortune/5f1044bc-9947-4525-9e45-716e01e08fd1-2.eot');
+    src: url('http://fonts.timeinc.net/ti/fortune/5f1044bc-9947-4525-9e45-716e01e08fd1-2.eot?#iefix') format('embedded-opentype'),
+      url('http://fonts.timeinc.net/ti/fortune/5f1044bc-9947-4525-9e45-716e01e08fd1-3.woff') format('woff'),
+      url('http://fonts.timeinc.net/ti/fortune/5f1044bc-9947-4525-9e45-716e01e08fd1-1.ttf') format('truetype'),
+      url('http://fonts.timeinc.net/ti/fortune/5f1044bc-9947-4525-9e45-716e01e08fd1-4.svg#millerdisplaybold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Miller Display Italic";
+    src: url('http://fonts.timeinc.net/ti/fortune/eac77268-3f9a-4f79-ae35-0e4d948edbfd-2.eot');
+    src: url('http://fonts.timeinc.net/ti/fortune/eac77268-3f9a-4f79-ae35-0e4d948edbfd-2.eot?#iefix') format('embedded-opentype'),
+      url('http://fonts.timeinc.net/ti/fortune/eac77268-3f9a-4f79-ae35-0e4d948edbfd-3.woff') format('woff'),
+      url('http://fonts.timeinc.net/ti/fortune/eac77268-3f9a-4f79-ae35-0e4d948edbfd-1.ttf') format('truetype'),
+      url('http://fonts.timeinc.net/ti/fortune/eac77268-3f9a-4f79-ae35-0e4d948edbfd-4.svg#millerdisplayitalic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Miller Display Roman";
+    src: url('http://fonts.timeinc.net/ti/fortune/04a65ca2-57c9-4927-b81b-9aa5764c0143-2.eot');
+    src: url('http://fonts.timeinc.net/ti/fortune/04a65ca2-57c9-4927-b81b-9aa5764c0143-2.eot?#iefix') format('embedded-opentype'),
+      url('http://fonts.timeinc.net/ti/fortune/04a65ca2-57c9-4927-b81b-9aa5764c0143-3.woff') format('woff'),
+      url('http://fonts.timeinc.net/ti/fortune/04a65ca2-57c9-4927-b81b-9aa5764c0143-1.ttf') format('truetype'),
+      url('http://fonts.timeinc.net/ti/fortune/04a65ca2-57c9-4927-b81b-9aa5764c0143-4.svg#millerdisplayroman') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
