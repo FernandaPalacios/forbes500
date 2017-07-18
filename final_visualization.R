@@ -7,23 +7,30 @@ library(ggplot2)
 
 # Employees --------------------------------------------------------------
 # Few companies have + 50000 employees
-ggplot(fortune2015.df, aes(x = num_employees, y = ranking)) + geom_point() + xlim(c(0,50000))
+ggplot(fortune2015.df, aes(x = num_employees, y = ranking)) + 
+  geom_point(colour = "green", alpha = 0.5) 
+
+# Analyze outliers: few, large #employees
+
+ggplot(fortune2015.df, aes(x = num_employees, y = ranking)) + 
+  geom_point(colour = "green", alpha = 0.5) + ylim(c(0,20))
+
 # All over the place!
 
 # Assets ------------------------------------------------------------------
 # Few companies have + 50000 employees
-ggplot(fortune2015.df, aes(x = assets, y = ranking)) + geom_point() + xlim(c(0,50000))
+ggplot(fortune2015.df, aes(x = assets, y = ranking)) + geom_point(colour = "green", alpha = 0.5) + xlim(c(0,50000))
 # All over the place!
 
 # Profit Change -----------------------------------------------------------
 # conglomeration near y axis
-ggplot(fortune2015.df, aes(x = profitchange, y = ranking)) + geom_point() + xlim(c(-500,500))
+ggplot(fortune2015.df, aes(x = profitchange, y = ranking)) + geom_point(colour = "green", alpha = 0.5) + xlim(c(-500,500))
 # color by positive, negative
 
 # Profits -----------------------------------------------------------------
-ggplot(fortune2015.df, aes(x = profits, y = ranking)) + geom_point()  + xlim(c(-10000,40000))
+ggplot(fortune2015.df, aes(x = profits, y = ranking)) + geom_point(colour = "green", alpha = 0.5)  + xlim(c(-10000,40000))
 # Lower the ranking, higher the profits
 
 # Revenue Change ----------------------------------------------------------
-ggplot(fortune2015.df, aes(x = revchange, y = ranking)) + geom_point() + xlim(c(-50,50))
+ggplot(fortune2015.df, aes(x = revchange, y = ranking)) + geom_point(colour = "green", alpha = 0.5) + xlim(c(-50,50))
 # All over
