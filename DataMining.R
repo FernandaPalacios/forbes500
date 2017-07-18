@@ -55,7 +55,7 @@ emp_ran.df = data.frame(ranking = rankings2015, company = companies2015, num_emp
 
 # Split num_employees by tens of thousands
 
-emp_ran.df$group_by_employees = emp_ran.df$num_employees%/%10000
+# emp_ran.df$group_by_employees = emp_ran.df$num_employees%/%10000
 
 
 # Profits 2015 ------------------------------------------------------------
@@ -65,13 +65,13 @@ companies2015profit.span = profits2015 %>% html_nodes("span.company-name")
 companies2015profit = companies2015profit.span %>% html_text()
 
 
-# Profits
+# Profits (Millions)
 profits2015.text = profits2015 %>% 
-  html_nodes("div.company-list-sort-type-container > div > div") %>%
+  html_nodes(".sort-value") %>%
   html_text()
 
+# Clean and convert
 
-# Cleqn and convert
 profits2015.numeric = str_replace_all(profits2015.text, "\n", "") %>%
   str_replace_all("\t", "") %>%
   str_replace_all(",", "")  %>% 
@@ -84,10 +84,6 @@ profits.df = data.frame(company = companies2015profit, profits = profits2015.num
 
 
 # Merge dataframes --------------------------------------------------------
-fortune2015.df = merge(emp_ran.df, profits.df, by = "company")
-names(fortune2015.df)
-
-
 # Missing:  Rev Change,  Profit Change, Assets
 
 # Rev Change 2015  --------------------------------------------------------
@@ -126,7 +122,7 @@ companies2015profitchange = companies2015profitchange.span %>% html_text()
 
 # Profit Change (%)
 profitchange2015.text = profitchange2015 %>% 
-  html_nodes("div.company-list-sort-type-container > div > div") %>%
+  html_nodes(".sort-value") %>%
   html_text()
 
 
@@ -139,7 +135,7 @@ profitchange2015.numeric = str_replace_all(profitchange2015.text, "\n", "") %>%
 
 
 # Build data frame
-profitchange.df = data.frame(company = companies2015revchange, profitchange = profitchange2015.numeric)
+profitchange.df = data.frame(company = companies2015profitchange, profitchange = profitchange2015.numeric)
 
 
 
@@ -166,11 +162,9 @@ assets2015.numeric = str_replace_all(assets2015.text, "\n", "") %>%
 # Build data frame
 assets.df = data.frame(company = companies2015revchange, assets = assets2015.numeric)
 
+# Complete data frame ------------------------------------------------------
 
-# Data visualization ------------------------------------------------------
-# Ranking & Profits
-
-ggplot(fortune2015.df, aes(x = ranking, y = profits)) + geom_point()
-
-
-
+fortune2015.df = merge(emp_ran.df, assets.df, by = "company") %>% 
+  merge(profitchange.df, by = "company") %>%
+  merge(profits.df, by = "company") %>% 
+  merge(revchange.df, by = "company")
