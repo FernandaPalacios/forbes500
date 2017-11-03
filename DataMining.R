@@ -1,30 +1,12 @@
-# Are large companies the top companies?
-# 
-# * What is top 
-# 
-# - Annual average employees
-# - Aggregate employees vs Rank, assuming similar context (past five years)
-# Train model: rank -> employees 
-
-
-# Highlights miau --------------------------------------------------------------
-# 
-# dont have Toshiba's profit
-# got NA's profit change and revchange
-
-
-# to list data frames in environment
-ls()[sapply(ls(), function(x) class(get(x))) == 'data.frame']
-
 library(rvest)
 library(dplyr)
 library(stringr)
 library(ggplot2)
 
+# Are large companies the top companies?
 
 # FACTORS: Rev Change, Profits, Profit Change, Assets, Employees
 # extracting each factor from its own site, ranking from employees'site
-
 
 # Employees & Ranking 2015 --------------------------------------------------------------------
 
@@ -99,7 +81,7 @@ revchange2015.text = revchange2015 %>%
   html_text()
 
 
-# Cleqn and convert
+# Clean and convert
 revchange2015.numeric = str_replace_all(revchange2015.text, "\n", "") %>%
   str_replace_all("\t", "") %>%
   str_replace_all(",", "")  %>% 
@@ -108,7 +90,6 @@ revchange2015.numeric = str_replace_all(revchange2015.text, "\n", "") %>%
 
 
 # Build data frame
-# miau: got NA's
 revchange.df = data.frame(company = companies2015revchange, revchange = revchange2015.numeric)
 
 
@@ -145,9 +126,6 @@ assets2015 = read_html("Data/assets2015.html")
 companies2015assets.span = assets2015 %>% html_nodes("span.company-name")
 companies2015assets = companies2015assets.span %>% html_text()
 
-
-
-# Assets
 assets2015.text = assets2015 %>% 
   html_nodes("div.company-list-sort-type-container > div > div") %>%
   html_text()
