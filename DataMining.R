@@ -81,7 +81,7 @@ revchange2015.text = revchange2015 %>%
   html_text()
 
 
-# Cleqn and convert
+# Clean and convert
 revchange2015.numeric = str_replace_all(revchange2015.text, "\n", "") %>%
   str_replace_all("\t", "") %>%
   str_replace_all(",", "")  %>% 
@@ -90,7 +90,6 @@ revchange2015.numeric = str_replace_all(revchange2015.text, "\n", "") %>%
 
 
 # Build data frame
-# miau: got NA's
 revchange.df = data.frame(company = companies2015revchange, revchange = revchange2015.numeric)
 
 
