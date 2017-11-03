@@ -1,21 +1,3 @@
-# Are large companies the top companies?
-# 
-# * What is top 
-# 
-# - Annual average employees
-# - Aggregate employees vs Rank, assuming similar context (past five years)
-# Train model: rank -> employees 
-
-
-# Highlights miau --------------------------------------------------------------
-# 
-# dont have Toshiba's profit
-# got NA's profit change and revchange
-
-
-# to list data frames in environment
-ls()[sapply(ls(), function(x) class(get(x))) == 'data.frame']
-
 library(rvest)
 library(dplyr)
 library(stringr)
